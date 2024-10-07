@@ -30,7 +30,7 @@ router.delete('/:id', async(req, res) => {
     return res.json(data);
 })
 
-router.delete('/delParticipant/:idUser/:idExp', async(req, res) => {
+router.delete('/del/:idUser/:idExp', async(req, res) => {
     const data = await userServices.getEntries.delExperience(req.params.idUser,req.params.idExp)
     return res.json(data);
 })

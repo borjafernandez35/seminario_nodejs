@@ -7,7 +7,7 @@ export interface usersInterface{
     mail: string,
     password: string,
     comment: string,
-    experince: ObjectId[]
+    experience: ObjectId[]
 }
 export type UsersInterfacePublicInfo = Pick<usersInterface, 'id' | 'name' | 'comment'>
 export type newUserInfo = Omit<usersInterface,'id'>

@@ -5,7 +5,7 @@ export const usersSchema = new Schema<usersInterface>({
     id: Number,
     name: String,
     mail: String,
-    experince: [{type: Schema.Types.ObjectId, ref:'experince'}],
+    experience: [{type: Schema.Types.ObjectId,required: false, ref:'experience'}],
     password: String,
     comment: String
 })
